@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f97316">
+  <title>PAUL TECH SERVICES | Services numériques</title>
+  <meta name="description" content="PAUL TECH SERVICES : maintenance informatique et services numériques au Burkina Faso. Demandez un devis facilement.">
+  <style>
+    :root{--orange:#f97316;--orange-dark:#c2410c;--ink:#172033;--muted:#657084;--bg:#f6f7fb;--card:#fff;--line:#e6e9ef;--green:#137a4b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.2px}
+    .logo{display:grid;place-items:center;background:var(--orange);color:#fff;width:42px;height:42px;border-radius:12px;font-weight:900}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{text-decoration:none;font-size:.94rem;font-weight:650}
+    .hero{padding:64px 0 46px;background:linear-gradient(135deg,#fff7ed,#fff 58%,#ffedd5)}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:center}
+    .eyebrow{display:inline-block;padding:6px 12px;border-radius:99px;background:#ffedd5;color:#9a3412;font-weight:750;font-size:.84rem}
+    h1{font-size:clamp(2.15rem,5vw,3.7rem);line-height:1.08;letter-spacing:-1.5px;margin:18px 0}
+    h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;margin:0 0 12px}
+    p{color:var(--muted)}
+    .hero p{font-size:1.08rem;max-width:620px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 18px;border:0;border-radius:12px;text-decoration:none;font-weight:800;cursor:pointer;font:inherit;font-weight:750}
+    .primary{background:var(--orange);color:#fff}
+    .primary:hover{background:var(--orange-dark)}
+    .secondary{background:#fff;border:1px solid var(--line);color:var(--ink)}
+    .hero-card{background:#fff;padding:24px;border:1px solid #fed7aa;border-radius:24px;box-shadow:0 18px 55px #9a34121a}
+    .hero-card .big-icon{font-size:3.4rem}
+    .hero-card ul{padding-left:20px;margin-bottom:0}
+    section{padding:54px 0}
+    .section-head{max-width:660px;margin-bottom:26px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .card .ico{font-size:1.8rem}
+    .card h3{margin:10px 0 6px}
+    .card p{margin:0 0 16px}
+    .price{font-weight:850;color:var(--orange-dark)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+    label{display:block;font-weight:700;margin:14px 0 6px}
+    input,select,textarea{width:100%;padding:12px 13px;border:1px solid #cfd5df;border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+    input:focus,select:focus,textarea:focus{outline:3px solid #fed7aa;border-color:var(--orange)}
+    .note{font-size:.9rem;background:#fff7ed;border:1px solid #fed7aa;padding:12px;border-radius:12px;color:#7c2d12}
+    .result{display:none;margin-top:14px;padding:14px;border:1px solid #b7e4cb;border-radius:12px;background:#f0fdf4;color:#14532d}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step{padding:18px;border-left:4px solid var(--orange);background:#fff;border-radius:0 14px 14px 0}
+    footer{background:#111827;color:#fff;padding:32px 0}
+    footer p{color:#d1d5db;margin:8px 0}
+    .footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .small{font-size:.88rem}
+    .tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:4px 9px;font-size:.8rem;color:var(--muted)}
+    @media(max-width:780px){.hero-grid,.split{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}nav{gap:10px}nav a{font-size:.82rem}}
+    @media(max-width:520px){.cards{grid-template-columns:1fr}.nav{align-items:flex-start}.brand{font-size:.9rem}nav{flex-wrap:wrap;justify-content:flex-end}.hero{padding-top:42px}section{padding:42px 0}.panel{padding:18px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#accueil" style="text-decoration:none" aria-label="Accueil PAUL TECH SERVICES">
+      <span class="logo">PT</span><span>PAUL TECH SERVICES</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="#services">Services</a><a href="#commande">Demander un devis</a><a href="#paiement">Paiement</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Votre partenaire numérique au Burkina Faso</span>
+        <h1>La technologie, <span style="color:var(--orange-dark)">en toute simplicité.</span></h1>
+        <p>Maintenance informatique, assistance et services numériques. Décrivez votre besoin et recevez une réponse de PAUL TECH SERVICES.</p>
+        <div class="actions">
+          <a class="btn primary" href="#commande">Demander un devis</a>
+          <a class="btn secondary" href="#services">Voir les services</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="big-icon" aria-hidden="true">💻</div>
+        <h2>Un service clair et pratique</h2>
+        <ul>
+          <li>Diagnostic informatique</li>
+          <li>Installation et configuration</li>
+          <li>Assistance et conseils numériques</li>
+          <li>Demande de devis avant paiement</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">Nos prestations</span>
+        <h2>Comment pouvons-nous vous aider ?</h2>
+        <p>Les prix ci-dessous sont des exemples à modifier selon votre zone, le travail demandé et le coût des pièces. Le prix final doit être confirmé avec le client.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="ico">🛠️</div><h3>Diagnostic informatique</h3><p>Recherche de panne et conseils sur la réparation.</p><div class="price">À partir de 2 000 FCFA</div></article>
+        <article class="card"><div class="ico">⚙️</div><h3>Installation de logiciels</h3><p>Installation et configuration de logiciels autorisés.</p><div class="price">À partir de 2 000 FCFA</div></article>
+        <article class="card"><div class="ico">🧹</div><h3>Entretien du PC</h3><p>Nettoyage logiciel, mises à jour et optimisation raisonnable.</p><div class="price">À partir de 3 000 FCFA</div></article>
+        <article class="card"><div class="ico">🔐</div><h3>Sécurité et sauvegarde</h3><p>Conseils de sécurité et aide à la sauvegarde de fichiers.</p><div class="price">Sur devis</div></article>
+        <article class="card"><div class="ico">🌐</div><h3>Assistance numérique</h3><p>Aide à l'utilisation d'outils et de services en ligne.</p><div class="price">Sur devis</div></article>
+        <article class="card"><div class="ico">📦</div><h3>Autre prestation</h3><p>Expliquez votre besoin pour obtenir une estimation.</p><div class="price">Sur devis</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="commande" style="background:#eef1f7">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Étape 1</span>
+        <h2>Demandez un devis</h2>
+        <p>Remplissez ce formulaire de démonstration. Il crée un récapitulatif sur cette page, mais n'envoie pas encore les données à un serveur.</p>
+        <div class="note">Prototype : aucune donnée n'est transmise ni enregistrée. Pour recevoir les demandes en ligne, il faudra connecter un formulaire sécurisé ou WhatsApp.</div>
+      </div>
+      <form class="panel" id="quoteForm">
+        <label for="client">Votre nom</label><input id="client" name="client" autocomplete="name" required placeholder="Ex. Amadou">
+        <label for="contact">Téléphone de contact</label><input id="contact" name="contact" inputmode="tel" required placeholder="Ex. 70 00 00 00">
+        <label for="service">Service demandé</label>
+        <select id="service" name="service" required>
+          <option value="">Choisir un service</option><option>Diagnostic informatique</option><option>Installation de logiciels</option><option>Entretien du PC</option><option>Sécurité et sauvegarde</option><option>Assistance numérique</option><option>Autre prestation</option>
+        </select>
+        <label for="details">Description du besoin</label><textarea id="details" name="details" rows="3" placeholder="Décrivez brièvement le problème (facultatif)"></textarea>
+        <button class="btn primary" type="submit" style="width:100%;margin-top:16px">Préparer ma demande</button>
+        <div class="result" id="quoteResult" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <section id="paiement">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Étape 2</span>
+        <h2>Paiement Orange Money</h2>
+        <p>Après confirmation du service et du prix, le client pourra payer via une solution officielle Orange Money si PAUL TECH SERVICES y est accepté.</p>
+        <p>Pour cette première version, le bouton ci-contre n'effectue aucun paiement. Il sert uniquement à expliquer le processus.</p>
+      </div>
+      <div class="panel">
+        <h3>Comment le paiement sera activé</h3>
+        <ol>
+          <li>Confirmer le prix et la prestation avec le client.</li>
+          <li>Demander à Orange Burkina les conditions d'accès au paiement en ligne.</li>
+          <li>Intégrer l'API officielle après contrat et tests.</li>
+          <li>Afficher le statut confirmé uniquement après vérification côté serveur.</li>
+        </ol>
+        <div class="note"><strong>Important :</strong> ne demandez jamais au client son code PIN Orange Money. Ne publiez pas de faux bouton de paiement ni de numéro de paiement non vérifié.</div>
+        <button class="btn secondary" type="button" id="demoPay" style="width:100%;margin-top:16px">Tester le parcours (démo uniquement)</button>
+        <div class="result" id="payResult" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>Un parcours simple</h2><p>La première version est volontairement légère et peut être consultée sur téléphone ou ordinateur.</p></div>
+      <div class="steps">
+        <div class="step"><strong>1. Choisir</strong><p>Le client sélectionne une prestation.</p></div>
+        <div class="step"><strong>2. Confirmer</strong><p>PAUL TECH SERVICES confirme le devis et le délai.</p></div>
+        <div class="step"><strong>3. Payer</strong><p>Le paiement réel sera proposé après intégration officielle.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div><strong>PAUL TECH SERVICES</strong><p>Maintenance informatique et services numériques.</p></div>
+    <div><strong>Contact</strong><p>Ajoutez ici votre numéro professionnel et vos coordonnées vérifiées.</p><p class="small">© <span id="year"></span> PAUL TECH SERVICES</p></div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const form = document.getElementById('quoteForm');
+  const quoteResult = document.getElementById('quoteResult');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const data = new FormData(form);
+    quoteResult.style.display = 'block';
+    quoteResult.innerHTML = '<strong>Demande préparée (démo)</strong><br>' +
+      'Nom : ' + escapeHtml(data.get('client')) + '<br>' +
+      'Contact : ' + escapeHtml(data.get('contact')) + '<br>' +
+      'Service : ' + escapeHtml(data.get('service')) +
+      (data.get('details') ? '<br>Description : ' + escapeHtml(data.get('details')) : '') +
+      '<br><br><span class="small">Aucune donnée n’a été envoyée. Contactez le responsable pour confirmer la demande.</span>';
+  });
+  document.getElementById('demoPay').addEventListener('click', function(){
+    const box = document.getElementById('payResult');
+    box.style.display = 'block';
+    box.textContent = 'Mode démonstration : aucun argent n’a été demandé ou transféré. Le paiement réel sera disponible seulement après intégration et validation de la solution officielle Orange Money.';
+  });
+  function escapeHtml(value){
+    return String(value).replace(/[&<>"']/g, function(ch){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];
+    });
+  }
+</script>
+</body>
+</html>
